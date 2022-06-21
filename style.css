@@ -49,10 +49,11 @@ nav ul li a:hover{
 .images{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    align-items: center;
+    gap: 16px;
     margin-left: 10px;;
 }
 .images img{
     border-radius: 5px;
-    width: 20rem;
+    width: 30rem;
 }

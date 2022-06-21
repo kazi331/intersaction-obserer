@@ -13,9 +13,11 @@ const imageObserver = new IntersectionObserver((entries, observer) => {
         console.log(image);
         const newUrl = image.getAttribute('data-src');
         image.src = newUrl;
+        // stop observer 
+        observer.unobserve(image);
     })
 }, imageOptions);
-
+    
 images.forEach(image => {
     // const newUrl = image.getAttribute('data-src');
     // image.src = newUrl;
